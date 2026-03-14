@@ -86,13 +86,13 @@ python cartpole_basic.py
 ```bash
 python cartpole_dqn_run.py --baseline
 ```
-*Observation: It survives, but wobbles significantly and drifts off-center.*
+*Observation: The pole wobbles heavily and the agent collapses quickly (~40 steps).*
 
 **Check its score:**
 ```bash
 python evaluate_performance.py --baseline
 ```
-*Expected Score: Around 40-50 points. It fails the Centering and Smoothness criteria.*
+*Expected Score: Around 20-25 points. It fails Survival (~3/40) and Smoothness (0/30) due to heavy wobble and quick pole collapse. Centering may appear decent (~19/30) simply because the episodes are too short for the cart to drift far.*
 
 ---
 
