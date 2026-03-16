@@ -172,6 +172,28 @@ python evaluate_challenge.py
 | **Smoothness** | 30% | Is the movement stable? (Penalty if \|angular_vel\| > 0.2) |
 | **Robustness** | Pass/Fail | Must survive > 300 steps in `evaluate_challenge.py` |
 
+---
+
+## 📋 Assignment Rules
+
+### What you are allowed to modify
+
+*   **`calculate_custom_reward()` in `student_assignment_dqn.py`** — This is the **primary task**. Design your reward function here.
+*   **Training hyperparameters** — You may adjust values such as `episodes`, learning rate (`lr`), `batch_size`, `gamma`, `epsilon_decay`, etc. to improve training.
+
+### What you must NOT modify
+
+*   The `DQN` network architecture (class `DQN`)
+*   The evaluation scripts: `evaluate_performance.py` and `evaluate_challenge.py`
+*   Any other files outside of `student_assignment_dqn.py`
+
+### Submission
+
+Submit the following two files only:
+
+1.  `student_assignment_dqn.py` — your modified training script
+2.  `student_model.pth` — the trained model weights produced by your script
+
 ## 🙏 Acknowledgments & References
 
 This assignment is adapted from the classic **CartPole-v1** environment provided by [Farama Foundation Gymnasium](https://gymnasium.farama.org/).
